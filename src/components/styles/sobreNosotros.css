@@ -43,10 +43,10 @@
 
 .imagenFija {
   width: 50%;
-  background-image: url('../../../public/img/construccion.avif');
-  background-size: cover;
+  background-image: url('../../../public/img/asado/vacioALaLlama.jpg');
+  background-size: cover ; 
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 @media (max-width: 768px){

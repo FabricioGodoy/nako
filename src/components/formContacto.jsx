@@ -13,18 +13,18 @@ export const FormContacto = () => {
     const name = form.current.name.value.trim();
     const email = form.current.email.value.trim();
     const message = form.current.message.value.trim();
-    const title = form.current.title.value.trim();
+    /* const title = form.current.title.value.trim(); */
 
-    if (!name || !email || !message || !title) {
+    if (!name || !email || !message) {
       setStatus('Por favor completá todos los campos.');
       return;
     }
 
     emailjs.sendForm(
-      'service_jjmq0tl',        // ← Reemplazá con tu Service ID
-      'template_fz2jutq',       // ← Reemplazá con tu Template ID
+      'service_e6iaaxb',        // ← Reemplazá con tu Service ID
+      'template_4gofe1j',       // ← Reemplazá con tu Template ID
       form.current,
-      '8SUvxJjeMAcEED9eA' // ← Reemplazá con tu Public Key (EmailJS)
+      'ok7RwcYFmxrYUi84R' // ← Reemplazá con tu Public Key (EmailJS)
     )
     .then(() => {
       setStatus('Mensaje enviado con éxito ✔️');
@@ -47,7 +47,7 @@ export const FormContacto = () => {
     </div>
 
     <div className="form-group">
-      <input type="text" name="title" placeholder="Tipo y nombre de empresa" reqired/>
+      <input type="text" name="nombreEmpresa" placeholder="Tipo y nombre de empresa" reqired/>
       <textarea name="message" placeholder="Mensaje" required/>
     </div>
     <input type="hidden" name="time" value={new Date().toLocaleString()} />

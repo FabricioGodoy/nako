@@ -12,6 +12,9 @@
   border-radius: 16px;
   backdrop-filter: blur(6px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  text-align: center;
   
 }
 

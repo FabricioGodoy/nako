@@ -54,7 +54,7 @@ const ServiceCard2 = ({ title, services, image }) => (
 
 export const HomePage = () => {
   const servicesData = [
-    {
+   /*  {
       title: 'Comercialización de Gas Natural',
       image: '../../img/iconos/genteReunida.jpg', 
       services: [
@@ -82,16 +82,19 @@ export const HomePage = () => {
           Participamos en el mercado eléctrico, nuestra experiencia nos permite acercarle a los clientes una propuesta de abastecimiento de energía renovable y asesoramiento respecto a los proyectos renovables que puedan significar un paso adelante en cuanto a sustentabilidad, y ahorros de costos futuros.
         </>
       ]
-    },
+    }, */
     {
-      title: 'Servicios de comercialización y despacho',
-      image: '../../img/iconos/rayoEngranaje.jpg', 
+      title: 'EVENTOS DE CALIDAD',
+      image: '../../img/iconos/chefCocina.png', 
       services: [
-        'Para productores.',
-        'Para consumidores industriales.',
-        'Brindamos servicios de comercialización y despacho a productores y consumidores industriales, de modo tal de asegurar la correcta asignación de volúmenes y evitar cortes o multas por desbalances o incumplimientos regulatorios.'
+        'Cada evento es una oportunidad para crear algo único. Llevamos nuestra cocina de fuego allí donde estés, cuidando cada detalle para que la experiencia sea tan inolvidable como el sabor.',
+        'Bodas y celebraciones especiales: Creamos propuestas gastronómicas a medida para acompañar uno de los días más importantes de tu vida. Un asado a fuego lento, carnes servidas en vivo, guarniciones frescas y sabores que emocionan, en un ambiente cálido, festivo y elegante.',
+        'Cumpleaños y fiestas privadas: Ya sea un gran banquete o una comida íntima entre amigos, llevamos el fuego y el sabor donde tú quieras. Vos disfrutás, nosotros cocinamos en vivo, y todos se van hablando del menú.',
+        'Bautizos y comuniones: Un momento especial en familia merece un catering que lo acompañe con el mismo cariño. Ofrecemos opciones para todos los públicos, incluyendo menús infantiles, platos vegetarianos y propuestas adaptadas.',
+        'Eventos de empresa y team building: ¿Querés sorprender a tu equipo o a tus clientes? Organizamos parrilladas y showcookings en directo ideales para fomentar la conexión, disfrutar juntos y salir de lo habitual. El fuego es siempre un punto de encuentro.',
+        'Cualquier excusa para celebrar: Porque no siempre hace falta una gran razón para reunirnos. Si tenés ganas de comer bien, compartir con los tuyos y vivir una experiencia diferente, armamos un plan a tu medida. Vos ponés la fecha, nosotros encendemos las brasas.'
       ]
-    },
+    }/* ,
     {
       title: 'Servicios de consultoría integral',
       image: '../../img/iconos/trabajadores.png',
@@ -101,7 +104,7 @@ export const HomePage = () => {
         'Medio ambiente',
         'EPC'
       ]
-    }
+    } */
   ];
   const datosContacto = [
     {
@@ -136,19 +139,19 @@ useEffect(() => {
         <div className="slides" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
 
           <div className="slide active">
-            <img src="../../img/carrousel/canosDia.png" alt="Caños de día" />
+            <img src="../../img/carrousel/GPT1.png" alt="Caños de día" />
             <div className="textOverlay">
             {/*   <h2 className="slideTitle">Distribución de Energía</h2> */}
             </div>
           </div>
           <div className="slide">
-            <img src="../../img/carrousel/plantaVME.png" alt="Planta VME" />
+            <img src="../../img/carrousel/GPT2.png" alt="Planta VME" />
             <div className="textOverlay">
               {/* <h2 className="slideTitle">Procesamiento de Gas Natural</h2> */}
             </div>
           </div>
           <div className="slide">
-            <img src="../../img/carrousel/canosNoche.png" alt="Caños de noche" />
+            <img src="../../img/carrousel/GPT3.png" alt="Caños de noche" />
             <div className="textOverlay">
               {/* <h2 className="slideTitle">Conectividad Nocturna</h2> */}
             </div>

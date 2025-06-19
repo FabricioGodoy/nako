@@ -27,9 +27,9 @@ export const NavBar = () => {
 
   return (
     <header className="header" ref={navRef}>
-      <div className="header-top">
+      <div   className="header-top">
         <a href="/">
-          <img src="../../img/VACAMUERTA.avif" alt="logo" className="logo" />
+          <img src="../../img/logos/redondoNegro.jpg" alt="logo" className="logo" />
         </a>
         <div
           className={`hamburger ${menuOpen ? 'open' : ''}`}
