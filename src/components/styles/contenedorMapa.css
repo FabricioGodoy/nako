@@ -1,0 +1,11 @@
+.mapContainer{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+  .mapContainer iframe {
+    max-width: 100%;
+    width: 90%;
+    height: 400px;
+    border: none;
+  }

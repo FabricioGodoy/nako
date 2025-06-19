@@ -1,0 +1,92 @@
+/* Estilo general del formulario */
+.form-container {
+  width: 65vw;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Agrupaciones por fila */
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+/* Inputs base */
+.form-container input,
+.form-container textarea {
+  padding: 14px 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #f7f7f7;
+  width: 100%;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+  border-color: #0077ff;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Layout horizontal para escritorio: 2 por fila */
+.form-row-double > input {
+  width: calc(50% - 12px);
+}
+
+/* Textarea más alto */
+.form-container textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Botón de envío */
+.form-container button {
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #005fcc;
+}
+
+/* Estado del mensaje */
+.status-message {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .form-group {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .form-row-double > input {
+    width: 100%;
+  }
+
+  .form-container {
+    padding: 24px;
+    margin: 30px 16px;
+    width: 70vw;
+  }
+}

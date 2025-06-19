@@ -1,0 +1,74 @@
+.seccionNosotros {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.contenido {
+  width: 50%;
+  height: auto;
+  background-color: rgba(128, 128, 128, 0.1);
+  padding: 4em 2em;
+ /*  overflow-y: auto; */
+}
+
+
+.contenido h1 {
+  font-weight: bold;
+  font-size: 3em;
+  color: black;
+  text-align: center;
+  margin-bottom: 1em;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contenido h1::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #ffc107; 
+  margin: 0.5em auto 0 auto;
+  border-radius: 2px;
+}
+.contenido p {
+  color: #333;
+  font-size: 17px;
+  line-height: 2;
+  font-family: 'Roboto', serif;
+  font-weight: 390;
+  text-align: justify;
+}
+
+.imagenFija {
+  width: 50%;
+  background-image: url('../../../public/img/construccion.avif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px){
+    .seccionNosotros{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .contenido{
+        width: 100%;
+        padding: 2em;
+    }
+    .contenido p{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .imagenFija {
+        width: 100%;
+        min-height: 250px;
+        background-image: url('../../../public/img/construccion.avif');
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+    }
+}
