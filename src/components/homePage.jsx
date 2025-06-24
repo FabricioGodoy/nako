@@ -108,19 +108,12 @@ export const HomePage = () => {
   ];
   const datosContacto = [
     {
-      title: 'Domicilio',
+      title: 'Tenemos base en la zona de Alicante, Benidorm y Altea.',
       image: 'https://img.icons8.com/external-tal-revivo-regular-tal-revivo/96/375f91/external-delivery-pin-for-parcel-delivery-location-making-delivery-regular-tal-revivo.png', 
       services: [
-        'Presidente Guido 1999, Buenos Aires (1119) Argentina'
+        'Cubrimos eventos en toda España.'
       ]
-    },
-    {
-      title: 'Días y horarios de atención',
-      image: 'https://img.icons8.com/ios/100/375f91/clock--v1.png', 
-      services: [
-        'Lunes a Viernes de 14:00hs a 18:30hs'
-      ]
-    },
+    }
   ] 
 
 const [currentSlide, setCurrentSlide] = useState(0);
@@ -200,12 +193,12 @@ useEffect(() => {
       <br/>
 
       <br/>
-      <a href="https://wa.me/+5491152632378" className="btn-flotante" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/+34662021515"  className="btn-flotante" target="_blank" rel="noopener noreferrer">
         <img src="https://img.icons8.com/office/40/whatsapp--v1.png" alt="wpp"></img>
       </a>
       <br/>
       <br/>
-      <ContenedorMapa />
+    {/*   <ContenedorMapa /> */}
     </div>
   );
 };
