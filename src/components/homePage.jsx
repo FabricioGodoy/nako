@@ -1,7 +1,7 @@
 import React from 'react';
 import { SobreNosotros } from '../components/sobreNosotros'
 import { useEffect, useState } from 'react';
-import { ContenedorMapa } from './contenedorMapa';
+/* import { ContenedorMapa } from './contenedorMapa'; */
 import { FormContacto } from './formContacto';
 import { Intro } from './intro';
 import { Novedades } from './novedades';
