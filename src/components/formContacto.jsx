@@ -36,23 +36,24 @@ export const FormContacto = () => {
 
   return (
     <div className="form-container">
-  <form ref={form} onSubmit={sendEmail}>
-    <div className="form-group form-row-double">
-      <input type="text" name="name" placeholder="Nombre" required />
-      <input type="text" name="surname" placeholder="Apellido" required/>
-    </div>
-    <div className="form-group form-row-double">
-      <input type="email" name="email" placeholder="Email" required/>
-      <input type="number" name="celphone" placeholder="Telefono" />
-    </div>
+      <form ref={form} onSubmit={sendEmail}>
+        <div className="form-group form-row-double">
+          <input type="text" name="name" placeholder="Nombre" required />
+          <input type="text" name="surname" placeholder="Apellido" required/>
+        </div>
+        <div className="form-group form-row-double">
+          <input type="email" name="email" placeholder="Email" required/>
+          <input type="number" name="celphone" placeholder="Telefono" />
+        </div>
 
-    <div className="form-group">
-      <input type="text" name="nombreEmpresa" placeholder="Tipo y nombre de empresa" reqired/>
-      <textarea name="message" placeholder="Mensaje" required/>
-    </div>
-    <input type="hidden" name="time" value={new Date().toLocaleString()} />
-    <button type="submit">Enviar</button>
-  </form>
+        <div className="form-group">
+          <input type="text" name="nombreEmpresa" placeholder="Motivo" reqired/>
+          <textarea name="message" placeholder="¿Cuántos invitados tenés? ¿Qué evento estás organizando? Contanos qué carnes preferís y te preparamos una propuesta ideal."
+ required/>
+        </div>
+        <input type="hidden" name="time" value={new Date().toLocaleString()} />
+        <button type="submit">Enviar</button>
+      </form>
   {status && <p className="status-message">{status}</p>}
 </div>
   );

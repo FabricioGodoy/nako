@@ -127,6 +127,22 @@ useEffect(() => {
 
   return (
     <div className='contenedorPadreHomePage'>
+     <div className="heroVideoContainer">
+      <video className="heroVideo" autoPlay muted loop playsInline>
+        <source src="../../vids/videonachito.mp4" type="video/mp4" />
+        Tu navegador no soporta el video HTML5.
+      </video>
+      <div className="heroTextOverlay">
+        <img src="../../img/logos/logoPNG.png" alt="Logo" className="heroLogo" />
+        <h1 className="tituloFachero">FUEGOS Y BRASAS</h1>
+        <h1>Catering de Asado</h1>
+        <h2>Cocina de Fuegos en Vivo</h2>
+      </div>
+    </div>
+<br/>
+<br/>
+<br/>
+      
       <div className="carousel">
           <Intro />
         <div className="slides" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
