@@ -148,19 +148,19 @@ useEffect(() => {
         <div className="slides" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
 
           <div className="slide active">
-            <img src="../../img/carrousel/GPT1.png" alt="Caños de día" />
+            <img src="../../img/carrousel/ingnacho.jpg" alt="Caños de día" />
             <div className="textOverlay">
             {/*   <h2 className="slideTitle">Distribución de Energía</h2> */}
             </div>
           </div>
           <div className="slide">
-            <img src="../../img/carrousel/GPT2.png" alt="Planta VME" />
+            <img src="../../img/carrousel/ingnacho2.jpg" alt="Planta VME" />
             <div className="textOverlay">
               {/* <h2 className="slideTitle">Procesamiento de Gas Natural</h2> */}
             </div>
           </div>
           <div className="slide">
-            <img src="../../img/carrousel/GPT3.png" alt="Caños de noche" />
+            <img src="../../img/carrousel/ingnacho3.jpg" alt="Caños de noche" />
             <div className="textOverlay">
               {/* <h2 className="slideTitle">Conectividad Nocturna</h2> */}
             </div>
